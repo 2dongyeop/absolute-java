@@ -2,8 +2,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,java
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,java
 
-.iml
-.idea
+*.iml
+.idea*
 
 ### Java ###
 # Compiled class file
