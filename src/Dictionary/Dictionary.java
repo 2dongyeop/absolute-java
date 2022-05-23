@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Dictionary {
     static List<Word> wrdNote = new ArrayList<>();
     static Word word = new Word();
-
+/*
     static void start() {
         System.out.println("1.자료 추가 | 2.자료 삭제 | 3.자료 조회 | 4.자료 검색");
         Scanner scanner = new Scanner(System.in);
@@ -59,5 +59,5 @@ public class Dictionary {
     static void search(int inputNum) {
         //String str = wrdNote.get(inputNum);
         System.out.println("");
-    }
+    }*/
 }
