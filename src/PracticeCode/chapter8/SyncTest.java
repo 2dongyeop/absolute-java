@@ -5,7 +5,7 @@ import java.util.Random;
 class BankAccount {
     int balance = 0;
 
-    public void withdraw(int money) {
+    public synchronized void withdraw(int money) {
         if (money > 0 && balance >= money) {
             try {
                 Thread.sleep(100);
@@ -19,9 +19,11 @@ class BankAccount {
     }
 
     public void deposit(int money) {
-        if (money > 0) {
-            balance += money;
-            System.out.printf("%d 입금하여 현재잔고 %d입니다. %n", money, balance);
+        synchronized (this) {
+            if (money > 0) {
+                balance += money;
+                System.out.printf("%d 입금하여 현재잔고 %d입니다. %n", money, balance);
+            }
         }
     }
 }
