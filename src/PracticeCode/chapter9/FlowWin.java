@@ -12,7 +12,7 @@ public class FlowWin extends JFrame {
         setSize(300, 180);
         setTitle(title);
 
-        setLayout(new FlowLayout(FlowLayout.RIGHT, 10, 20));
+        setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 10, 20));
         btn1 = new JButton("버튼 1");
         btn2 = new JButton("버튼 2");
         btn3 = new JButton("버튼 3");
