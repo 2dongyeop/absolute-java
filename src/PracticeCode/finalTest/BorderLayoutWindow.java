@@ -1,4 +1,4 @@
-package newCode.major.PracticeCode.chapter9.finalTest;
+package newCode.major.PracticeCode.finalTest;
 
 import javax.swing.*;
 import java.awt.*;
