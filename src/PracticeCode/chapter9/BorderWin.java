@@ -12,7 +12,7 @@ public class BorderWin extends JFrame {
         setSize(300, 180);
         setTitle(title);
 
-        setLayout(new BorderLayout(30, 20));
+        setLayout(new java.awt.BorderLayout(30, 20));
         btn1 = new JButton("North");
         btn2 = new JButton("South");
         btn3 = new JButton("West");
@@ -20,7 +20,7 @@ public class BorderWin extends JFrame {
         btn5 = new JButton("Center");
 
         add(btn1, "North");
-        add(btn2, BorderLayout.SOUTH);
+        add(btn2, java.awt.BorderLayout.SOUTH);
         add(btn3, "West");
         add(btn4, "East");
         add(btn5, "Center");
