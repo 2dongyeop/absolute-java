@@ -12,14 +12,18 @@ class MyDraw extends JPanel {
 }
 
 public class PaintComponent extends JFrame {
-    public static void main(String[] args) {
-        PaintComponent pc = new PaintComponent();
-        pc.setTitle("첫 윈도우");
-        pc.setSize(300, 300);
+    public PaintComponent(String title) {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setTitle(title);
+        setSize(300, 300);
 
-        Container pane = pc.getContentPane();
+        Container pane = getContentPane();
         MyDraw md = new MyDraw();
         pane.add(md);
-        pc.setVisible(true);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        PaintComponent pc = new PaintComponent("첫 윈도우");
     }
 }
